@@ -1,0 +1,12 @@
+
+ .navbar{
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.logo{
+    margin-left: 10rem !important;
+}
+.inp{
+    margin-right: 10rem !important;
+}

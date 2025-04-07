@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="tripadvisor-icon.png">
+    <title>Trip advisor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- navbar -->
+
+<body class="overflow-x-hidden" style="width: 100%; height: 75%;">
+    <div class="container-fluid navbar navbar-light bg-light  " style="z-index: 1;">
+        <nav class="navbar navbar-light bg-light logo">
+            <div class="container">
+                <a class="navbar-brand" style="font-weight:bold;" href="#">
+                    <img src="tripadvisor-icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Tripadvisor
+                </a>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  mx-auto">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="font-weight: bold;">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-weight: bold;" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-weight: bold;" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" style="font-weight: bold;" href="#" tabindex="-1"
+                                aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-light bg-light inr">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="world-globe-line-icon.png" alt="" width="24" height="26"
+                        class="d-inline-block align-text-top">
+                    |INR
+                </a>
+            </div>
+        </nav>
+        <form class="d-flex inp">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="text-center text-6xl font-bold pt-4">
+        <h1> Where to? </h1>
+    </div>
+
+    <!-- logo -->
+    <section>
+        <div class=" flex justify-center gap-11 mt-5">
+
+            <button>
+                <h5 class=" hover:underline"> <i class="fa-solid fa-house"></i> Search all</h5>
+            </button>
+            <button>
+                <h5 class=" hover:underline"><i class="fa-solid fa-hotel"></i> Hotels</h5>
+            </button>
+            <button>
+                <h5 class=" hover:underline"> <i class="fa-solid fa-camera"></i> Things to Do</h5>
+            </button>
+            <button>
+                <h5 class=" hover:underline"><i class="fa-solid fa-utensils"></i> Restaurants</h5>
+            </button>
+            <button>
+                <h5 class=" hover:underline"><i class="fa-solid fa-plane-circle-check"></i> Flights</h5>
+            </button>
+            <button>
+                <h5 class=" hover:underline"> <i class="fa-solid fa-key"></i>Holiday Homes</h5>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- searchbar -->
+
+    <form class="mt-10 mx-auto max-w-4xl py-2 px-6 rounded-full bg-black-50 border flex focus-within:border-black-700">
+        <input type="text" placeholder="Search anything"
+            class="bg-transparent w-full focus:outline-none pr-4 font-semibold border-0 focus:ring-0 px-0 py-0"
+            name="topic"><button
+            class="flex flex-row items-center justify-center min-w-[130px] px-4 rounded-full  border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-base bg-green-600 text-white font-medium tracking-wide border-transparent py-1.5 h-[38px] -mr-3">
+            Search
+        </button>
+    </form>
+
+    <!-- tripposter -->
+
+    <div class="flex justify-center mt-5 ">
+        <img class="rounded-xl"
+            src="https://media-cdn.tripadvisor.com/media/photo-o/2e/d9/f1/88/caption.jpg?w=1200&h=-1" alt="">
+    </div>
+
+    <!-- specialevent -->
+
+    <div class="flex p-10 bg-green-100 ml-44 mt-5 md:grid-cols-1" style="width: 76%;">
+
+        <img class="h-36 w-48 rounded-xl"
+            src=" https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/a4/aa/02/caption.jpg?w=400&h=400&s=1"
+            alt="">
+        <div class="ml-5">
+            <h2 class="mb-2">Sponsored by airindia</h2>
+            <h2>Discover singapore</h2>
+            <h2>Find Out why traverals loves singapore</h2>
+            <button class="p-2 rounded-2xl text-xl   bg-white">Explore Now</button>
+        </div>
+    </div>
+
+    <!-- below special event -->
+
+    <div class="ml-44 mt-4">
+        <h4 class="font-semibold mb-3">Explore the world most stunning seasides</h4>
+        <p class="font-medium">2025’s Travellers Choice Awards Best of the Best Beaches</p>
+    </div>
+
+    <!-- img section -->
+    <div class=" flex grid-cols-4  gap-5 ml-44 rounded-xl ">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt=""
+            class="inline w-64 h-52">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/50/7b/caption.jpg?w=600&h=-1&s=1" alt=""
+            class="inline w-60 h-52">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/50/f6/caption.jpg?w=600&h=-1&s=1" alt=""
+            class="inline w-64 h-52">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/51/0b/caption.jpg?w=600&h=-1&s=1" alt=""
+            class="inline w-64 h-52">
+
+    </div>
+    <!-- 
+ img under -->
+
+    <div class="ml-44 mt-4">
+        <h4 class="font-semibold mb-3">Get inspired by our fave travel creators</h4>
+        <p class="font-medium">Tried-and-true guidance to fuel your next big trip</p>
+    </div>
+
+    <!-- image two -->
+    <div class=" flex  grid-cols-3  ml-44 mr-16">
+        <div class="mb-5">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c9/6c/08/caption.jpg?w=800&h=-1&s=1"
+                alt="" class="w-9/12 ">
+            <h3>By Ashlyn S</h3>
+            <p>3 family-friendly days in Rome</p>
+            <h2 class="flex justify-center mr-20">❤</h2>
+            <p class="font-bold ml-36">28 items</p>
+
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f3/96/caption.jpg?w=800&h=500&s=1"
+                alt="" class="w-9/12">
+            <h5>By Eileen Ivette</h5>
+            <p>The ultimate 'workcation' in Mexico City</p>
+            <h2 class="flex justify-center mr-20 ">❤</h2>
+            <p class="font-bold ml-36">28 items</p>
+
+
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/ae/5d/da/caption.jpg?w=800&h=-1&s=1"
+                alt="" class="w-9/12">
+            <h5>By Two Bad Tourists</h5>
+            <p class="mb-8">Exploring LGBTQ+-friendly Barcelona</p>
+            <h2 class="flex justify-center mr-20">❤</h2>
+            <p class="font-bold ml-36">28 items</p>
+
+        </div>
+    </div>
+
+    <!-- img content madras -->
+    <div class="ml-44 mt-4 font-semibold">
+        <h2>Ways to tour Chennai (Madras)</h2>
+        <p>Book these experiences for a close-up look at Chennai (Madras).</p>
+    </div>
+
+    <!-- img section madras -->
+
+
+    <div class=" flex grid-cols-4  ml-44  ">
+        <div>
+            <img class="rounded-xl  w-3/5 mb-3 "
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/01/5d/caption.jpg?w=600&h=600&s=1"
+                alt="">
+            <h5>The Bazaar Walking tour</h5>
+            <p>3 family-friendly days in </p>
+            <p class="font-bold">from ₹2,587 per adult</p>
+
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f5/7d/62/caption.jpg?w=600&h=600&s=1"
+                alt="" class=" rounded-xl  w-3/5 mb-3">
+            <h5>Private Chennai Day Tour - Art History and Chennai</h5>
+            <p>The ultimate 'workcation' in Madras City</p>
+
+            <p class="font-bold ">from ₹2,587 per adult</p>
+
+
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/fc/df/41/caption.jpg?w=600&h=600&s=1"
+                alt="" class="rounded-xl  w-3/5 mb-3">
+            <h5> tour in Chennai about the founding of Chennai</h5>
+            <p>Exploring LGBTQ+-friendly Madras</p>
+
+            <p class="font-bold">from ₹2,587 per adult</p>
+        </div>
+
+        <div class="mb-5">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/23/48/b0/caption.jpg?w=600&h=600&s=1"
+                alt="" class=" rounded-xl w-3/5 mb-3">
+            <h5>Chennai:Tour of Chennai</h5>
+            <p>3 family-friendly days in Marina </p>
+            <p class="font-bold">from ₹2,500 per adult</p>
+        </div>
+
+    </div>
+    <!-- special event -->
+
+    <div class="flex p-2 bg-green-100 ml-44 mt-5 rounded-2xl " style="width: 76%;">
+
+        <img class="h-36 w-48 rounded-xl"
+            src=" https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9b/2f/74/dallas.jpg?w=400&h=400&s=1"
+            alt="">
+        <div class="ml-5">
+            <h2 class="mb-2 font-semibold">Explore Dallas like a local: 12 hidden gems you'll return to again and again
+            </h2>
+            <h2 class="mb-2 font-thin">Discover India</h2>
+            <h2 class="mb-2 font-thin">Find Out why traverals loves India</h2>
+            <button class="p-2 rounded-2xl text-xl  bg-white">View More</button>
+        </div>
+    </div>
+
+
+    <!-- more to explore -->
+     <!-- <div>
+       <div class=" flex mr-80 overflow-x-scroll ml-80" style="width: 100%;">
+        <img class="w-5/12" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/c1/4f/f7/caption.jpg?w=600&h=-1&s=1" alt="">
+       </div>
+    </div> -->
+
+    <!-- <div class="flex ml-44 gap-5  w-4/5 bg-gray-50 h-screen overflow-x-auto" >
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="">
+            <p></p>
+        </div>
+    </div> -->
+     <div>
+
+    <div class=" flex justify-center items-center h-screen bg-gray-100 mt-2 ml-44 mr-44 rounded-3xl">
+        <div class="w-4/5 overflow-hidden">
+            <h3  class="mt-5 mb-5">More To Explore</h3> 
+            <div class="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory " style="scroll-behavior: smooth;">
+                
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/46/b8/chennai-madras.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/84/3c/bc/upper-bhavani-lake.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/36/1f/f9/bahia-de-bengala.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c8/55/10/kovai-kutralam-falls.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/79/6f/89/sri-chamundeshwari-temple.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+   <!-- 1233 -->
+
+<div class="ml-44 mt-4 font-semibold">
+    <h3>Dream Your Next Trip</h3>
+    <p>Weekend getaways from Chennai (Madras)</p>
+</div>
+
+<!-- imgsection  -->
+
+<div class=" flex grid-cols-4  ml-44  ">
+    <div>
+        <img class="rounded-xl  w-3/5 mb-3 "
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/01/5d/caption.jpg?w=600&h=600&s=1"
+            alt="">
+        <h5>The Bazaar Walking tour</h5>
+        <p>3 family-friendly days in </p>
+        <p class="font-bold">from ₹2,587 per adult</p>
+
+    </div>
+
+    <div>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f5/7d/62/caption.jpg?w=600&h=600&s=1"
+            alt="" class=" rounded-xl  w-3/5 mb-3">
+        <h5>Private Chennai Day Tour - Art History and Chennai</h5>
+        <p>The ultimate 'workcation' in Madras City</p>
+
+        <p class="font-bold ">from ₹2,587 per adult</p>
+
+
+    </div>
+
+    <div>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/fc/df/41/caption.jpg?w=600&h=600&s=1"
+            alt="" class="rounded-xl  w-3/5 mb-3">
+        <h5> tour in Chennai about the founding of Chennai</h5>
+        <p>Exploring LGBTQ+-friendly Madras</p>
+
+        <p class="font-bold">from ₹2,587 per adult</p>
+    </div>
+</div>
+
+    <div class=" flex grid-cols-4  ml-44  ">
+        <h3>Top destinations for your next holiday</h3>
+    </div>
+
+    <!-- imgsection -->
+    <div class=" flex grid-cols-4  ml-44  ">
+        <div>
+            <img class="rounded-xl  w-3/5 mb-3 "
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/78/15/caption.jpg?w=600&h=600&s=1"
+                alt="">
+            <h5>The Bazaar Walking tour</h5>
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/b1/singapore.jpg?w=600&h=600&s=1"
+                alt="" class=" rounded-xl  w-3/5 mb-3">
+            <h5>Private Chennai</h5>
+
+        </div>
+
+        <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/4e/55/e6/chhatrapati-shivaji-terminus.jpg?w=600&h=600&s=1"
+                alt="" class="rounded-xl  w-3/5 mb-3">
+            <h5>  about the founding of Chennai</h5>
+        </div>
+
+        <div class="mb-5">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/c7/f1/d3/caption.jpg?w=600&h=600&s=1"
+                alt="" class=" rounded-xl w-3/5 mb-3">
+            <h5>Chennai:Tour of Chennai</h5>
+        </div>
+    </div>
+
+        
+    <div class="  bg-green-300 mt-4 ml-44 mr-44 rounded-3xl">
+        <div class="w-4/5 overflow-hidden">
+            <div class="ml-44 mt-4 font-semibold">
+                <h2>Home Rentals Near You</h2>
+                <p>We think you'd enjoy these homes for a quick trip out of town.</p>
+            <h3  class="mt-2 mb-5">More To Explore</h3> 
+            <div class="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory " style="scroll-behavior: smooth;">
+                
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/46/b8/chennai-madras.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/84/3c/bc/upper-bhavani-lake.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/36/1f/f9/bahia-de-bengala.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c8/55/10/kovai-kutralam-falls.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+                <div class="flex-shrink-0 w-1/3 snap-center">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/79/6f/89/sri-chamundeshwari-temple.jpg?w=600&h=600&s=1" alt="" class="w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- footer upper  -->
+
+    <div class="flex justify-center mt-4 " style="background-color: #33E0A1;">
+        <img class="rounded-xl"
+            src="https://media-cdn.tripadvisor.com/media/photo-o/2e/d9/f1/88/caption.jpg?w=1200&h=-1" alt="">
+            <div>
+                <h3 class="position-absolute  right-96 text-3xl w-56 mt-10 ">          
+                     Travellers' Choice Awards Best of the Best </h3>
+                     <p  class="position-absolute right-96 w-56 mt-40 font-bold   text-3xl">Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+                     <button class="bg-black font-black position-absolute right-96 w-40 mt-96 p-2 rounded-3xl text-white  ">See the winner</button>
+            </div>
+    </div>
+
+<!-- 
+    footer -->
+
+    
+    <div class="flex flex-row w-full mt-5 bg-gray-200 text-1xl font-normal mx-auto ml-44 mr-44  ">
+        <div class="flex flex-col ml-44 ">
+            <button> About Tripadvisor</button>
+            <button> About Us</button>
+            <button> Press</button>
+            <button>Resources and Policies</button>
+            <button> Careers</button>
+            <button> Trust & Safet</button>
+            <button> Contact us</button>
+            <button> Accessibility Statement </button>
+        </div>
+        <div class="flex flex-col ml-5">
+            <button> About Tripadvisor</button>
+            <button>About Us</button>
+            <button> Press</button>
+            <button> Resources and Policies</button>
+            <button> Careers</button>
+            <button> Trust & Safety</button>
+            <button>Contact u></button>
+            <button>Accessibility Statement</button>
+        </div>
+
+        <div class="flex flex-col ml-4">
+            <button> About Tripadvisor</button>
+            <button>About Us</button>
+            <button> Press</button>
+            <button> Resources and Policies</button>
+            <button> Careers</button>
+            <button> Trust & Safety</button>
+            <button> Contact us</button>
+            <button> Accessibility Statement</button>
+        </div>
+
+        <div class="ml-56">
+            <p>Tripadvisor Sites</p>
+            <p>Book tours and attraction tickets on Viator</p>
+
+            <div class="py-10">
+                <select class="w-12">
+                    <option>Inr</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                </select>
+                <select>
+                    <option>india</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                    <option>ind</option>
+                </select>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+
+    
+
+
+    
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
